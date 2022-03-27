@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SuiteTest" parallel="tests" thread-count="7" >
+
+    <test name="QA" >
+        <classes>
+            <class name="tests.BuyItemTest"></class>
+            <class name="tests.WrongCredentialsTest"></class>
+            <class name="tests.CorrectLoginTest"></class>
+            <class name="tests.DeleteItemTest"></class>
+            <class name="tests.LoginWithEmptyPasswordTest"></class>
+            <class name="tests.LoginWithEmptyUsernameTest"></class>
+            <class name="tests.VerifyLogoutTest"></class>
+        </classes>
+    </test>
+</suite>
